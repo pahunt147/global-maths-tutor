@@ -363,18 +363,18 @@ footer a:hover{color:var(--white);}
         <p><a href="https://pahunt147.github.io/teach-further-maths" target="_blank">Teach Further Maths</a> — A-Level Further Maths teaching resources</p>
         <p><a href="https://pahunt147.github.io/maths-trumps" target="_blank">Maths Trumps</a> — Educational maths card game</p>
       </div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+      <form class="contact-form" action="https://formspree.io/f/maenlpde" method="POST">
         <div class="form-group">
           <label for="c-name">Your name</label>
-          <input type="text" id="c-name" placeholder="e.g. Jane Smith" required>
+          <input type="text" id="c-name" name="name" placeholder="e.g. Jane Smith" required>
         </div>
         <div class="form-group">
           <label for="c-email">Email address</label>
-          <input type="email" id="c-email" placeholder="jane@example.com" required>
+          <input type="email" id="c-email" name="email" placeholder="jane@example.com" required>
         </div>
         <div class="form-group">
           <label for="c-level">Level required</label>
-          <select id="c-level">
+          <select id="c-level" name="level">
             <option value="">Select a level...</option>
             <option>Key Stage 3</option>
             <option>GCSE / iGCSE</option>
@@ -386,7 +386,7 @@ footer a:hover{color:var(--white);}
         </div>
         <div class="form-group">
           <label for="c-message">Message</label>
-          <textarea id="c-message" placeholder="Tell Paul a bit about what you need — exam board, current level, any upcoming exams..."></textarea>
+          <textarea id="c-message" name="message" placeholder="Tell Paul a bit about what you need — exam board, current level, any upcoming exams..."></textarea>
         </div>
         <button type="submit" class="form-submit">Send Message</button>
       </form>
